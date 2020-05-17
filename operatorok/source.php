@@ -109,7 +109,7 @@ print("ll > a   : ");
 var_dump($ll > $a); // ll nagyobb mint a?
 
 print("ll != 99 : "); 
-var_dump($ll != $a); // ll nem egyenlő 99-cel?
+var_dump($ll != 99); // ll nem egyenlő 99-cel?
 
 
 print("\n--- hármas feltételes operátor (ternary conditional) ---\n");
