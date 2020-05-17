@@ -126,8 +126,14 @@ var_dump($igaz,$hamis);
 print("\nNEM igaz: "); 
 var_dump(! $igaz); // negálás, a logikai változó ellentétes értéke
 
-print("igaz VAGY hamis: "); 
-var_dump($igaz || $hamis); // logikai VAGY, mindig igaz, kivéve ha mindkettő hamis
+print("\nlogikai VAGY: logikai VAGY mindig igaz, kivéve ha mindkettő hamis: \n"); 
+var_dump( $igaz  || $igaz);
+var_dump( $igaz  || $hamis);
+var_dump( $hamis || $igaz);
+var_dump( $hamis || $hamis);
 
-print("igaz ÉS hamis: "); 
-var_dump($igaz && $hamis); // logikai ÉS, mindig hamis, kivéve ha mindkettő igaz
+print("\nlogikai ÉS: logikai ÉS, mindig hamis, kivéve ha mindkettő igaz: \n"); 
+var_dump( $igaz  && $igaz);
+var_dump( $igaz  && $hamis);
+var_dump( $hamis && $igaz);
+var_dump( $hamis && $hamis); 
